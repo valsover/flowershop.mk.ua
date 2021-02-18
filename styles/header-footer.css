@@ -1,6 +1,9 @@
 /* ШАПКА */
 .header {
   width: 100%;
+  border-radius: 2px;
+  box-shadow: 2px 2px 10px #bed6de;
+  margin-bottom: 30px;
 }
 
 .header-inner {
@@ -40,10 +43,14 @@
 }
 
 .nav-link {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--grey-font-color);
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--green-font-color);
 }
 /* ------------------------------------------------------------ */
 

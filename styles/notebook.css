@@ -1,11 +1,7 @@
 /* Ноутбуки */
-@media only screen and (min-width: 1024px) and (max-width: 1224px) {
-  html {
-    font-size: 8.5px;
-  }
-
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper {
-    row-gap: 40px;
+    row-gap: 20px;
   }
   .logo-area-top img {
     width: 100px;
@@ -13,13 +9,9 @@
   }
   .main-title-top {
     width: 100px;
-    font-size: 25px;
   }
   .nav {
     column-gap: 30px;
-  }
-  .nav-link {
-    font-size: 18px;
   }
   .main-inner {
     row-gap: 60px;
@@ -30,25 +22,47 @@
     align-items: center;
     row-gap: 10px;
   }
-  .welcome-row1 {
-    margin: 0 0 20px 0;
-    font-size: 40px;
-  }
-  .welcome-row2 {
-    font-size: 25px;
+  .welcome-text {
+    row-gap: 10px;
   }
   #katalog,
   #contacts {
     row-gap: 40px;
   }
-  .katalog-title,
-  .contacts-title {
-    font-size: 40px;
-  }
   .katalog-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     justify-content: space-between;
     grid-gap: 30px;
+  }
+  .contacts-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-title,
+  .item-data {
+    margin: 10px;
+  }
+  .map iframe {
+    min-width: 100%;
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .contacts-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .map iframe {
+    min-width: 100%;
+    height: 500px;
   }
 }

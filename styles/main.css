@@ -29,6 +29,7 @@
 .welcome-text {
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -114,6 +115,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: 1s;
+}
+.plant-card:hover {
+  transform: scale(1.5);
+  background-color: #fff;
 }
 .plant-card img {
   max-width: 100%;
@@ -214,7 +220,6 @@ p {
 }
 .map iframe {
   max-width: 100%;
-  max-height: auto;
 }
 /* -----------------------------------------
 -------------------------------------------- */

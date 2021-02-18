@@ -3,6 +3,11 @@
   html {
     font-size: 6px;
   }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
   .header-inner {
     padding: 15px 6%;
   }
@@ -10,10 +15,16 @@
     width: 60px;
     height: 60px;
   }
+  .nav {
+    display: flex;
+    column-gap: 15px;
+  }
   .main-title-top {
     width: 60px;
   }
   .main-inner {
+    display: flex;
+    flex-direction: column;
     row-gap: 30px;
   }
   .welcome {
@@ -78,6 +89,10 @@
     justify-content: space-between;
     grid-gap: 12px;
   }
+  .plant-card:hover {
+    transform: none;
+    background-color: none;
+  }
   .contacts-content {
     width: 100%;
     margin: 0;
@@ -99,6 +114,8 @@
     padding: 15px 6%;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   .main-title-bottom {
     width: 40px;
@@ -111,6 +128,11 @@
     display: none;
   }
   .socials-icons {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     column-gap: 4px;
   }
   .instagram-icon svg,

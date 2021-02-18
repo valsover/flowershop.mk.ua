@@ -3,6 +3,11 @@
   html {
     font-size: 9px;
   }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
   .header-inner {
     padding: 18px 7.5%;
   }
@@ -14,10 +19,13 @@
     width: 80px;
   }
   .nav {
-    column-gap: 30px;
+    display: flex;
+    column-gap: 20px;
   }
   .main-inner {
-    row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
   }
   .welcome {
     display: flex;
@@ -80,6 +88,10 @@
     justify-content: space-between;
     grid-gap: 20px;
   }
+  .plant-card:hover {
+    transform: none;
+    background-color: none;
+  }
   .contacts-content {
     width: 100%;
     display: flex;
@@ -99,9 +111,16 @@
     padding: 18px 7.5%;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  .socials {
-    max-width: 150px;
+  .socials-icons {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
   }
   .instagram-icon svg,
   .facebook-icon svg {

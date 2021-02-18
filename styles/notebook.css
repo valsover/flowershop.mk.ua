@@ -1,6 +1,8 @@
 /* Ноутбуки */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .wrapper {
+    display: flex;
+    flex-direction: column;
     row-gap: 20px;
   }
   .logo-area-top img {
@@ -11,10 +13,13 @@
     width: 100px;
   }
   .nav {
-    column-gap: 30px;
+    display: flex;
+    column-gap: 25px;
   }
   .main-inner {
-    row-gap: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
   }
   .welcome {
     display: flex;
@@ -35,6 +40,10 @@
     justify-content: space-between;
     grid-gap: 30px;
   }
+  .plant-card:hover {
+    transform: none;
+    background-color: none;
+  }
   .contacts-content {
     width: 100%;
     display: flex;
@@ -48,6 +57,13 @@
   .map iframe {
     min-width: 100%;
     height: 500px;
+  }
+  .footer-inner {
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 1224px) {

@@ -1,0 +1,220 @@
+.main {
+  width: 100%;
+}
+
+.main-inner {
+  margin: 0 auto;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+}
+/* ---------------------------------------
+------------------------------------------*/
+
+/* БЛОК 
+ПРИВЕТСТВИЕ 
+------------------------------------------
+------------------------------------------*/
+.welcome {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.welcome-row1 {
+  margin: 5px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--grey-font-color);
+}
+.welcome-row2 {
+  margin: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--green-font-color);
+}
+
+.welcome-imgs {
+  display: flex;
+  justify-content: flex-end;
+}
+.vertical-pic {
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+.vertical-pic img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+.horizontal-pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.horizontal-pic1,
+.horizontal-pic2 {
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+.horizontal-pic1 img,
+.horizontal-pic2 img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+/* ------------------------------------------
+--------------------------------------------- */
+
+/* БЛОК
+КАТАЛОГ 
+---------------------------------------------
+---------------------------------------------*/
+#katalog {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.katalog-title {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+  color: var(--green-font-color);
+  text-align: center;
+}
+
+.katalog-content {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  justify-content: space-between;
+  grid-gap: 30px;
+}
+.plant-card {
+  margin: 0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px #bed6de;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.plant-card img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+.figcaption {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.figcaption h3,
+p {
+  margin: 10px;
+}
+.plant-name {
+  font-size: 1.8rem;
+  color: var(--grey-font-color);
+}
+.plant-code {
+  font-size: 1.4rem;
+  color: var(--grey-font-color);
+}
+.plant-price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--green-font-color);
+}
+/* ------------------------------------------------
+--------------------------------------------------- */
+
+/* БЛОК 
+КОНТАКТЫ
+---------------------------------------------------
+--------------------------------------------------- */
+#contacts {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.contacts-title {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: var(--green-font-color);
+  text-align: center;
+}
+
+.contacts-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.contacts-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-text li {
+  list-style-type: none;
+}
+.contacts-item {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-title {
+  font-size: 1.8rem;
+  color: var(--grey-font-color);
+  text-align: center;
+}
+.item-data {
+  font-size: 1.6rem;
+  color: var(--grey-font-color);
+  text-align: center;
+}
+
+.map {
+  margin: 0;
+  padding: 0;
+}
+.map iframe {
+  max-width: 100%;
+  max-height: auto;
+}
+/* -----------------------------------------
+-------------------------------------------- */

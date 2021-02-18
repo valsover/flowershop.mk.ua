@@ -1,0 +1,112 @@
+/* Смартфоны */
+@media only screen and (min-width: 320px) and (max-device-width: 540px) {
+  html {
+    font-size: 6px;
+  }
+  .header-inner {
+    padding: 15px 6%;
+  }
+
+  .logo-area-top img {
+    width: 60px;
+    height: 60px;
+  }
+  .main-title-top {
+    width: 60px;
+  }
+  .main-inner {
+    row-gap: 30px;
+  }
+  .welcome {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 7px;
+  }
+  .welcome-text {
+    text-align: center;
+    align-items: center;
+  }
+  .welcome-imgs {
+    display: flex;
+    justify-content: center;
+  }
+  .vertical-pic,
+  .horizontal-pic1,
+  .horizontal-pic2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vertical-pic {
+    margin: 0 4px 0 0;
+  }
+  .horizontal-pic1 {
+    margin: 0 0 2px 0;
+  }
+  .horizontal-pic2 {
+    margin: 2px 0 0 0;
+  }
+  .horizontal-pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .vertical-pic img {
+    border-radius: 10px;
+    width: 94px;
+    height: auto;
+  }
+  .horizontal-pic1 img,
+  .horizontal-pic2 img {
+    border-radius: 10px;
+    max-width: 120px;
+    height: auto;
+  }
+
+  #katalog,
+  #contacts {
+    row-gap: 24px;
+  }
+  .katalog-content {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    justify-content: space-between;
+    grid-gap: 12px;
+  }
+  .item-title,
+  .item-data {
+    margin: 5px;
+  }
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px solid red;
+  }
+  .footer-inner {
+    margin: 0;
+    padding: 15px 6%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .main-title-bottom {
+    width: 40px;
+  }
+  .logo-area-bottom img {
+    width: 40px;
+    height: 40px;
+  }
+  .socials {
+    width: 100px;
+  }
+  .socials-icons {
+    column-gap: 4px;
+  }
+  .instagram-icon svg,
+  .facebook-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}

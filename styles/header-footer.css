@@ -1,0 +1,119 @@
+/* ШАПКА */
+.header {
+  width: 100%;
+}
+
+.header-inner {
+  margin: 0 auto;
+  padding: 20px 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area-top {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-area-top img {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+}
+.main-title-top {
+  margin: 0;
+  width: 100px;
+  font-size: 2.5rem;
+  color: var(--green-font-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  color: var(--grey-font-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* ------------------------------------------------------------ */
+
+/* ФУТЕР */
+.footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #4d5152;
+}
+
+.footer-inner {
+  margin: 0;
+  padding: 30px 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area-bottom {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title-bottom {
+  margin: 0;
+  width: 100px;
+  font-size: 2rem;
+  color: var(--green-font-color);
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+.socials-title {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  text-align: center;
+}
+.socials-icons {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.socials-icons p {
+  margin: 0;
+}
+.instagram-icon svg #instagram,
+.facebook-icon svg #facebook {
+  transition: 200ms;
+}
+.instagram-icon svg:hover #instagram,
+.facebook-icon svg:hover #facebook {
+  fill: #76a187;
+}

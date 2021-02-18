@@ -1,0 +1,56 @@
+/* iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html {
+    font-size: 7px;
+  }
+
+  .wrapper {
+    row-gap: 35px;
+  }
+  .logo-area-top img {
+    width: 100px;
+    height: 100px;
+  }
+  .main-title-top {
+    width: 100px;
+    font-size: 25px;
+  }
+  .nav {
+    column-gap: 30px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .main-inner {
+    row-gap: 55px;
+  }
+  .welcome {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .welcome-row1 {
+    margin: 0 0 18px 0;
+    font-size: 36px;
+  }
+  .welcome-row2 {
+    font-size: 22px;
+  }
+  #katalog,
+  #contacts {
+    row-gap: 36px;
+  }
+  .katalog-title,
+  .contacts-title {
+    font-size: 36px;
+  }
+  .katalog-content {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-content: space-between;
+    grid-gap: 26px;
+  }
+}

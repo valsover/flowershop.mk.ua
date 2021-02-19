@@ -1,51 +1,46 @@
 .main {
   width: 100%;
+  margin: 30px 0;
 }
-
 .main-inner {
   margin: 0 auto;
   padding: 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 60px;
 }
 /* ---------------------------------------
 ------------------------------------------*/
-
 /* БЛОК 
 ПРИВЕТСТВИЕ 
 ------------------------------------------
 ------------------------------------------*/
 .welcome {
   width: 100%;
-  margin: 0;
+  margin: 0 0 30px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
-
 .welcome-text {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
   justify-content: center;
   align-items: flex-start;
 }
 .welcome-row1 {
-  margin: 5px;
+  margin: 10px;
   font-size: 4rem;
   font-weight: bold;
   color: var(--grey-font-color);
 }
 .welcome-row2 {
-  margin: 5px;
+  margin: 10px;
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--green-font-color);
 }
-
 .welcome-imgs {
   display: flex;
   justify-content: flex-end;
@@ -77,20 +72,17 @@
 }
 /* ------------------------------------------
 --------------------------------------------- */
-
 /* БЛОК
 КАТАЛОГ 
 ---------------------------------------------
 ---------------------------------------------*/
 #katalog {
   width: 100%;
-  margin: 0;
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 40px;
 }
-
 .katalog-title {
   font-size: 4rem;
   margin: 0;
@@ -98,10 +90,9 @@
   color: var(--green-font-color);
   text-align: center;
 }
-
 .katalog-content {
   width: 100%;
-  margin: 0;
+  margin: 30px 0 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   justify-content: space-between;
@@ -153,20 +144,17 @@ p {
 }
 /* ------------------------------------------------
 --------------------------------------------------- */
-
 /* БЛОК 
 КОНТАКТЫ
 ---------------------------------------------------
 --------------------------------------------------- */
 #contacts {
   width: 100%;
-  margin: 0;
+  margin: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 40px;
 }
-
 .contacts-title {
   font-size: 4rem;
   margin: 0;
@@ -175,20 +163,17 @@ p {
   color: var(--green-font-color);
   text-align: center;
 }
-
 .contacts-content {
   width: 100%;
-  margin: 0;
+  margin: 30px 0 0 0;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  column-gap: 40px;
 }
-
 .contacts-text {
-  margin: 0;
+  margin: 0 30px 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -213,7 +198,6 @@ p {
   color: var(--grey-font-color);
   text-align: center;
 }
-
 .map {
   margin: 0;
   padding: 0;

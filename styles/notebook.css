@@ -1,81 +1,41 @@
 /* Ноутбуки */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  .logo-area-top img {
-    width: 100px;
-    height: 100px;
-  }
-  .main-title-top {
-    width: 100px;
-  }
-  .nav {
-    display: flex;
-    column-gap: 25px;
-  }
-  .main-inner {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-  }
   .welcome {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    row-gap: 10px;
+    flex-direction: column;
   }
   .welcome-text {
-    row-gap: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
   }
-  #katalog,
-  #contacts {
-    row-gap: 40px;
+  .welcome-row1,
+  .welcome-row2 {
+    margin: 10px;
   }
   .katalog-content {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    justify-content: space-between;
     grid-gap: 30px;
   }
-  .plant-card:hover {
-    transform: none;
-    background-color: none;
-  }
   .contacts-content {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+  .contacts-text {
+    margin: 0 0 20px 0;
   }
   .item-title,
   .item-data {
-    margin: 10px;
+    margin: 15px;
   }
-  .map iframe {
-    min-width: 100%;
-    height: 500px;
-  }
-  .footer-inner {
+  .socials-icons {
     margin: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+  }
+  .socials-icons p {
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 1224px) {
   .contacts-content {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 20px;
+    flex-wrap: nowrap;
   }
   .map iframe {
     min-width: 100%;

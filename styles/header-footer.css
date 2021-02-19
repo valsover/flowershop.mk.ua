@@ -3,9 +3,7 @@
   width: 100%;
   border-radius: 2px;
   box-shadow: 2px 2px 10px #bed6de;
-  margin-bottom: 30px;
 }
-
 .header-inner {
   margin: 0 auto;
   padding: 20px 10%;
@@ -14,14 +12,12 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .logo-area-top {
   margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .logo-area-top img {
   margin: 0;
   padding: 0;
@@ -34,15 +30,13 @@
   font-size: 2.5rem;
   color: var(--green-font-color);
 }
-
 .nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  column-gap: 3rem;
 }
-
 .nav-link {
+  margin: 20px;
   font-size: 2rem;
   color: var(--grey-font-color);
   text-transform: uppercase;
@@ -53,23 +47,20 @@
   color: var(--green-font-color);
 }
 /* ------------------------------------------------------------ */
-
 /* ФУТЕР */
 .footer {
   margin-top: auto;
   width: 100%;
   background-color: #4d5152;
 }
-
 .footer-inner {
   margin: 0;
   padding: 30px 10%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo-area-bottom {
   margin: 0;
   display: flex;
@@ -77,44 +68,39 @@
   justify-content: center;
   align-items: center;
 }
-
 .main-title-bottom {
   margin: 0;
   width: 100px;
   font-size: 2rem;
   color: var(--green-font-color);
 }
-
 .copyright {
   font-size: 1.2rem;
   color: #f6f6f6;
   text-transform: uppercase;
   text-align: center;
 }
-
 .socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 5px;
 }
 .socials-title {
-  margin: 0;
+  margin: 5px;
   font-size: 1.6rem;
   color: #f6f6f6;
   text-transform: uppercase;
   text-align: center;
 }
 .socials-icons {
-  margin: 0;
+  margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
 }
 .socials-icons p {
-  margin: 0;
+  margin: 3px;
 }
 .instagram-icon svg #instagram,
 .facebook-icon svg #facebook {

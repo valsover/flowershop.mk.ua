@@ -32,6 +32,14 @@
   .socials-icons p {
     margin: 10px;
   }
+  .instagram-icon svg #instagram,
+  .facebook-icon svg #facebook {
+    transition: none;
+  }
+  .instagram-icon svg:hover #instagram,
+  .facebook-icon svg:hover #facebook {
+    fill: none;
+  }
 }
 @media only screen and (min-width: 1224px) {
   .contacts-content {

@@ -117,4 +117,12 @@
     width: 35px;
     height: 35px;
   }
+  .instagram-icon svg #instagram,
+  .facebook-icon svg #facebook {
+    transition: none;
+  }
+  .instagram-icon svg:hover #instagram,
+  .facebook-icon svg:hover #facebook {
+    fill: none;
+  }
 }

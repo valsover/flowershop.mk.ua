@@ -102,11 +102,11 @@
 .socials-icons p {
   margin: 3px;
 }
-.instagram-icon svg #instagram,
-.facebook-icon svg #facebook {
+/* .instagram-icon svg,
+.facebook-icon svg {
   transition: 200ms;
 }
-.instagram-icon svg:hover #instagram,
-.facebook-icon svg:hover #facebook {
+.instagram-icon svg:hover,
+.facebook-icon svg:hover {
   fill: #76a187;
-}
+} */

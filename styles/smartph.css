@@ -104,7 +104,8 @@
   }
   .copyright {
     margin: 0;
-    width: 50px;
+    max-width: 50px;
+    height: auto;
   }
   .socials-title {
     display: none;
@@ -114,15 +115,7 @@
   }
   .instagram-icon svg,
   .facebook-icon svg {
-    width: 35px;
-    height: 35px;
-  }
-  .instagram-icon svg #instagram,
-  .facebook-icon svg #facebook {
-    transition: none;
-  }
-  .instagram-icon svg:hover #instagram,
-  .facebook-icon svg:hover #facebook {
-    fill: none;
+    max-width: 35px;
+    max-height: 35px;
   }
 }

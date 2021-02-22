@@ -87,157 +87,37 @@
           </section>
           <section id="katalog">
             <h2 class="katalog-title">Каталог</h2>
-            <div class="katalog-content">
-              <figure class="plant-card">
+            <div class="katalog-content" id="katalog-content">
+              <script>
+                let step = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                let host = [];
+                for (let j = 0; j < step.length; j++) {
+                  host.push(
+                    "http://flowershop.mk.ua/cgi-bin/plants/?id=" + step[j]
+                  );
+                }
+                for (let i = 0; i < host.length; i++) {
+                  let request = new XMLHttpRequest();
+                  request.open("GET", host[i], false);
+                  request.send();
+                  var resp = JSON.parse(request.response);
+                  var container = document.getElementById("katalog-content");
+
+                  container.innerHTML += `<figure class="plant-card">
                 <img
-                  src="images/plants/beloperone.jpg"
-                  alt="beloperone"
-                  width="310"
-                  height="310"
-                />
+                	src="${resp.plants[0].Link}"
+                	width="310"
+                	height="310"/>
                 <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Белопероне</h3>
-                    <p class="plant-code">00001</p>
-                  </div>
-                  <p class="plant-price">100 грн</p>
+                	<div class="plant-info">
+                	<h3 class="plant-name">${resp.plants[0].Name}</h3>
+                	<p class="plant-code">${resp.plants[0].Id}</p>
+                	</div>
+                	<p class="plant-price">${resp.plants[0].Price} грн</p>
                 </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/diffenbakhia.webp"
-                  alt="diffenbakhia"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Диффенбахия</h3>
-                    <p class="plant-code">00002</p>
-                  </div>
-                  <p class="plant-price">300 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/dracena.webp"
-                  alt="dracena"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Драцена</h3>
-                    <p class="plant-code">00003</p>
-                  </div>
-                  <p class="plant-price">900 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/ficus.webp"
-                  alt="ficus"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Фикус Кинки</h3>
-                    <p class="plant-code">00004</p>
-                  </div>
-                  <p class="plant-price">750 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/kiparis.webp"
-                  alt="kiparis"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Кипарис</h3>
-                    <p class="plant-code">00005</p>
-                  </div>
-                  <p class="plant-price">150 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/nefrolepis.webp"
-                  alt="nefrolepis"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Нефролепис</h3>
-                    <p class="plant-code">00006</p>
-                  </div>
-                  <p class="plant-price">550 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/palma.webp"
-                  alt="palma"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Пальма</h3>
-                    <p class="plant-code">00007</p>
-                  </div>
-                  <p class="plant-price">250 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/puancetia.webp"
-                  alt="puancetia"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Пуансетия</h3>
-                    <p class="plant-code">00008</p>
-                  </div>
-                  <p class="plant-price">50 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/shefflera.webp"
-                  alt="shefflera"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Шеффлера</h3>
-                    <p class="plant-code">00009</p>
-                  </div>
-                  <p class="plant-price">350 грн</p>
-                </figcaption>
-              </figure>
-              <figure class="plant-card">
-                <img
-                  src="images/plants/zamiokulkas.jpg"
-                  alt="zamiokulkas"
-                  width="310"
-                  height="310"
-                />
-                <figcaption class="figcaption">
-                  <div class="plant-info">
-                    <h3 class="plant-name">Замиокулькас</h3>
-                    <p class="plant-code">00010</p>
-                  </div>
-                  <p class="plant-price">350 грн</p>
-                </figcaption>
-              </figure>
+                </figure>`;
+                }
+              </script>
             </div>
           </section>
           <section id="contacts">

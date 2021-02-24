@@ -89,31 +89,27 @@
             <h2 class="katalog-title">Каталог</h2>
             <div class="katalog-content" id="katalog-content">
               <script>
-                let step = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-                let host = [];
-                for (let j = 0; j < step.length; j++) {
-                  host.push(
-                    "http://flowershop.mk.ua/cgi-bin/plants/?id=" + step[j]
-                  );
-                }
-                for (let i = 0; i < host.length; i++) {
-                  let request = new XMLHttpRequest();
-                  request.open("GET", host[i], false);
-                  request.send();
-                  var resp = JSON.parse(request.response);
-                  var container = document.getElementById("katalog-content");
-
+                let request = new XMLHttpRequest();
+                request.open(
+                  "GET",
+                  "http://flowershop.mk.ua/cgi-bin/plants/?perpage=30",
+                  false
+                );
+                request.send();
+                var resp = JSON.parse(request.response);
+                var container = document.getElementById("katalog-content");
+                for (let plant of resp.plants) {
                   container.innerHTML += `<figure class="plant-card">
                 <img
-                	src="${resp.plants[0].Link}"
+                	src="${plant.Link}"
                 	width="310"
                 	height="310"/>
                 <figcaption class="figcaption">
                 	<div class="plant-info">
-                	<h3 class="plant-name">${resp.plants[0].Name}</h3>
-                	<p class="plant-code">${resp.plants[0].Id}</p>
+                	<h3 class="plant-name">${plant.Name}</h3>
+                	<p class="plant-code">${plant.Id}</p>
                 	</div>
-                	<p class="plant-price">${resp.plants[0].Price} грн</p>
+                	<p class="plant-price">${plant.Price} грн</p>
                 </figcaption>
                 </figure>`;
                 }

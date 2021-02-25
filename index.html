@@ -98,20 +98,22 @@
                 request.send();
                 var resp = JSON.parse(request.response);
                 var container = document.getElementById("katalog-content");
+
                 for (let plant of resp.plants) {
+                  let idNum = plant.Id.toString().padStart(5, "0");
                   container.innerHTML += `<figure class="plant-card">
-                <img
-                	src="${plant.Link}"
-                	width="310"
-                	height="310"/>
-                <figcaption class="figcaption">
-                	<div class="plant-info">
-                	<h3 class="plant-name">${plant.Name}</h3>
-                	<p class="plant-code">${plant.Id}</p>
-                	</div>
-                	<p class="plant-price">${plant.Price} грн</p>
-                </figcaption>
-                </figure>`;
+                    <img
+                    src="${plant.Link}"
+                    width="350"
+                    height="350"/>
+                  <figcaption class="figcaption">
+                    <div class="plant-info">
+                    <h3 class="plant-name">${plant.Name}</h3>
+                    <p class="plant-code">${idNum}</p>
+                    </div>
+                    <p class="plant-price">${plant.Price} грн</p>
+                  </figcaption>
+                  </figure>`;
                 }
               </script>
             </div>

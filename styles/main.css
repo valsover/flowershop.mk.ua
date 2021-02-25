@@ -115,13 +115,8 @@
 }
 .plant-card img {
   max-width: 100%;
-  /* height: auto; */
   margin: 0;
-}
-.plant-card img {
-  max-width: 100%;
-  /* height: auto; */
-  margin: 0;
+  object-fit: cover;
 }
 .figcaption {
   width: 100%;
